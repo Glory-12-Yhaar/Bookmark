@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/bg-wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+a:hover {
+    color: hsl(231, 69%, 60%);
+    text-decoration: underline;
+}
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.sign-up-box{
+    position: relative;
+    width: 450px;
+    backdrop-filter: blur(25px);
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 5% 4%;
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 0 30px hsl(0, 1%, 18%);
+    margin-bottom: 5%;
+}
+.sign-up-header{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 4%, 90%);
+    width: 120px;
+    height: 50px;
+    border-radius: 0 0 15px 15px;
+    color: hsl(0, 1%, 24%);
+}
+.sign-up-header span{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sign-up-header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 50%;
+    background: transparent;
+    box-shadow: 15px 0 0 hsl(0, 4%, 90%);
+}
+.sign-up-header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-left-radius: 50%;
+    background: transparent;
+    box-shadow: -15px 0 0 hsl(0, 4%, 90%);
+}
+.sign-up-text{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1rem;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.input-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.input-field{
+    width: 100%;
+    height: 45px;
+    font-size: 1.5rem;
+    background: transparent;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 8px;
+    padding: 0 10px;
+    color: hsl(0, 0%, 100%);
+    outline: none;
+}
+#user, #email,#pass, #confirm-pass{
+    margin-bottom: 10px;
+}
+.label{
+    position: absolute;
+    top: 11px;
+    left: 20px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.input-field:focus ~ .label,
+.input-field:valid ~ .label{
+    position: absolute;
+    top: -11px;
+    left: 15px;
+    padding: 0 5px;
+    font-size: 1.2rem;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 42%);
+    border-radius: 30px;
+}
+.fa-user, .fa-lock, .fa-envelope{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+    color: hsl(0, 0%, 100%);
+}
+.sign-up-submit{
+    width: 100%;
+    height: 45px;
+    font-size: 1.5rem;
+    background-color: hsl(231, 10%, 39%);
+    border: none;
+    border-radius: 30px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sign-up-submit:hover{
+    background-color: hsl(240, 19%, 23%);
+    color: hsl(225, 15%, 69%);
+    scale: 1.02;
+    transform: translateY(2);
+}
+.login-link{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.login-link a{
+    font-weight: 600;
+}
+.login-link a:hover{
+    color: hsl(231, 69%, 60%);
+    text-decoration: underline;
+}
+@media only screen and (max-width: 768px){
+    .container{
+        padding: 5px;
+        width: 100%;
+
+    }
+    .sign-up-box{
+        width: 100%;
+        padding: 3% 2%;
+    }
+    .sign-up-header{
+        margin-bottom: 10px;
+    }
+   .sign-up-text{
+    
+        padding-top: 20px;
+    }
+}
