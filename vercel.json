@@ -1,13 +1,9 @@
 {
-    "version": 2,
-    "builds": [
-        { "src": "Index.html", "use": "@vercel/static" },
-        { "src": "HTML/*.html", "use": "@vercel/static" },
-        { "src": "CSS/*.css", "use": "@vercel/static" },
-        { "src": "JS/*.js", "use": "@vercel/static" },
-        { "src": "images/*", "use": "@vercel/static" }
-    ],
-    "routes": [
-        { "src": "/(.*)", "dest": "/$1" }
+    "rewrites": [
+        { "source": "/HTML/sign-up.html", "destination": "/HTML/sign-up.html" },
+        { "source": "/HTML/login.html", "destination": "/HTML/login.html" },
+        { "source": "/HTML/speedy-sch.html", "destination": "/HTML/speedy-sch.html" },
+        { "source": "/HTML/share.html", "destination": "/HTML/share.html" },
+        { "source": "/Index.html", "destination": "/Index.html" }
     ]
 }
