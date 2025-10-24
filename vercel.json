@@ -1,9 +1,5 @@
 {
     "rewrites": [
-        { "source": "/HTML/sign-up.html", "destination": "/HTML/sign-up.html" },
-        { "source": "/HTML/login.html", "destination": "/HTML/login.html" },
-        { "source": "/HTML/speedy-sch.html", "destination": "/HTML/speedy-sch.html" },
-        { "source": "/HTML/share.html", "destination": "/HTML/share.html" },
-        { "source": "/Index.html", "destination": "/Index.html" }
+        { "source": "/(.*)", "destination": "/" }
     ]
 }
