@@ -105,6 +105,7 @@ nav a:hover{
 
     @media(min-width: 769px) {
         flex-direction: row;
+        padding-top: 0;
         gap: 2%;
     } 
 }
@@ -122,8 +123,14 @@ nav a:hover{
         text-align: left;
         width: 90%;
         order: 1;
+        animation: slideleft 2s;
     }
 }
+@keyframes slideleft{
+        from{transform: translateX(-20%);
+        }
+}
+
 .hero-content h2{
     font-size: 2rem;
     margin-bottom: 5%;
@@ -199,6 +206,12 @@ nav a:hover{
     position: relative;
     @media(min-width: 769px) {
         order: 2;
+        animation: slideright 2s;
+    }
+}
+@keyframes slideright{
+    from{
+        transform: translateX(20%);
     }
 }
 .backgroud{
