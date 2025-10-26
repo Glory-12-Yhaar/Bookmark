@@ -4,11 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(/images/bg-wallpaper.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+
+    background: hsl(231, 69%, 60%);
 }
 a {
     text-decoration: none;

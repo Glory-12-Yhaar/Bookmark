@@ -30,7 +30,7 @@ body, input, textarea, a{
     float: left;
     display: block;
     border-radius: 30px 0 0 30px;
-    background: linear-gradient(144deg, hsl(0, 94%, 66%), hsl(231, 69%, 60%));
+    background: hsl(231, 69%, 60%);
     color: hsl(0, 0%, 100%);
 }
 .head{
@@ -99,7 +99,8 @@ body, input, textarea, a{
     padding: 5% 2% 2% 2%;
 }
 .input-box input, .textarea textarea{
-    border: none;
+    border: 2px solid inherit;
+    border-radius: 10px;
     outline: none;
     background: none;
     font-size: 1.3rem;
@@ -118,13 +119,12 @@ body, input, textarea, a{
     padding: 0 5%;
     border-radius: 25px;
     margin: 2%;
-    box-shadow: inset 4px 4px 4px #6e8ea7;
 }
 .textarea {
     margin-top: 20%;
     padding: 0 5%;
     border-radius: 25px;
-    box-shadow: inset -8px -8px 4px #6e8ea7;
+    border: 2px solid inherit;    
 }
 .send-btn{
     width: 40%;
