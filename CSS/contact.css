@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: hsl(245, 74%, 9%);
+    color: hsl(240, 23%, 97%);
+}
+body, input, textarea, a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section{
+    width: 100%;
+    padding: 5% 2%;
+}
+.box{
+    position: relative;
+    display: table;
+    width: 100%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 30px;
+}
+.info{
+    width: 35%;
+    height: 500px;
+    padding: 5% 3%;
+    float: left;
+    display: block;
+    border-radius: 30px 0 0 30px;
+    background: linear-gradient(144deg, hsl(0, 94%, 66%), hsl(231, 69%, 60%));
+    color: hsl(0, 0%, 100%);
+}
+.head{
+    text-align: left;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+}
+.sub-head{
+    margin-top: 5%;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+}
+#phone, #email, #website{
+    margin: 5% 0;
+    font-size: 1.1rem;
+}
+#phone i, #email i, #website i{
+    background: hsl(0, 94%, 66%);
+    padding: 3% 7% 3% 2%;
+    color: hsl(0, 0%, 100%);
+    border-radius: 100%;
+    margin-right: 10px;
+}
+#phone a, #email a, #website a{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+#phone a:hover, #email a:hover, #website a:hover{
+    text-decoration: underline;
+    color: hsl(0, 40%, 35%);
+}
+.social{
+    text-align: center;
+    margin: 5% 0 ;
+}
+.social i{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    border-radius: 100%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* form */
+
+.form{
+    width: 65%;
+    height: 500px;
+    float: right;
+    padding: 5%;
+    border-radius: 0 30px 30px 0;
+    background: #ecf0f3;
+    color: black;
+}
+.head{
+    text-align: center;
+    margin-left: 23px;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+.form-detail{
+    display: table;
+    width: 100%;
+    padding: 5% 2% 2% 2%;
+}
+.input-box input, .textarea textarea{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.3rem;
+    color: #555;
+    padding: 1%;
+    width: 100%;
+}
+.textarea textarea{
+    resize: none;
+    height: 150px;
+
+}
+.input-box{
+    width: 46%;
+    float: left;
+    padding: 0 5%;
+    border-radius: 25px;
+    margin: 2%;
+    box-shadow: inset 4px 4px 4px #6e8ea7;
+}
+.textarea {
+    margin-top: 20%;
+    padding: 0 5%;
+    border-radius: 25px;
+    box-shadow: inset -8px -8px 4px #6e8ea7;
+}
+.send-btn{
+    width: 40%;
+    height: 40px;
+    margin-top: 5%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(234, 67%, 57%);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.send-btn:hover{
+    background-color: hsl(231, 13%, 19%);
+    scale: 1.02;
+    transform: translateY(2px);
+}
